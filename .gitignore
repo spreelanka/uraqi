@@ -1,0 +1,4 @@
+.*bup*
+*sw*
+/tmp
+/log/*.log
