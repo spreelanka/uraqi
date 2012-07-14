@@ -1,0 +1,33 @@
+{
+
+  "background" : {
+    "scripts" : ["scripts/background.js", "scripts/jquery-1.7.2.min.js"]
+  },  
+
+  "browser_action": {
+    "name": "Volunteer spare computer cycles",
+    "default_icon" : "graphic-16.png"
+  },
+
+  "description" : "distributed natural language search engine" ,
+
+  "icons" : {
+    "16"  : "graphic-16.png",
+    "48"  : "graphic-48.png",
+    "128" : "graphic-128.png"
+  },
+
+  "manifest_version" : 1,
+  "name" : "uraqi",
+
+  "permissions": [
+    "background",
+    "http*://*/*",
+    "http://google.com",
+    "idle",
+    "tabs",
+    "unlimitedStorage"
+  ],
+
+  "version"  : "1"
+}
