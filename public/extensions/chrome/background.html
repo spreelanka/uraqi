@@ -3,11 +3,30 @@
 
   <head>
     <title> Uraqi configuration options</title>
-    <script data-main="scripts/main" src="scripts/require.js"></script>
+    <script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript"> 
+var url = "http://www.google.com";
+// $.getJSON(url, +"/=?", callback);
+// function callback(data) {console.log(data)};
+// jQuery.getJSON(url,function(data) {
+//     console.log(data);
+// });
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "http://www.twitter.com", true);
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4) {
+    var resp = JSON.parse(xhr.responseText);
+    console.log('the resp: ');
+    console.log(resp);
+  }
+}
+xhr.send();
+    </script>
   </head>
 
   <body>
   <p> look, text! </p>
-
   </body>
+
 </html>

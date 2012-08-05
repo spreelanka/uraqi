@@ -1,11 +1,11 @@
 {
 
   "background" : {
-    "scripts" : ["scripts/background.js", "scripts/jquery-1.7.2.min.js"]
+    "scripts" : ["scripts/background.js", "scripts/jquery-1.7.2.min.js", "scripts/main.js"]
   },  
 
   "browser_action": {
-    "name": "Volunteer spare computer cycles",
+    "name": "uraqi",
     "default_icon" : "graphic-16.png"
   },
 
@@ -21,9 +21,9 @@
   "name" : "uraqi",
 
   "permissions": [
+    "webRequest",
     "background",
-    "http*://*/*",
-    "http://google.com",
+    "http://www.twitter.com/",
     "idle",
     "tabs",
     "unlimitedStorage"
